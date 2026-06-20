@@ -30,7 +30,6 @@ A fully responsive single-page application (SPA) for **Keansburg Pack** — an a
   - [📁 Project Structure](#-project-structure)
   - [🔌 API Integration](#-api-integration)
   - [🤝 Contributing](#-contributing)
-  - [📜 License](#-license)
   - [📞 Contact](#-contact)
 
 ---
@@ -240,12 +239,6 @@ Contributions are welcome! Here's how you can help:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
