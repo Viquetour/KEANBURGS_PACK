@@ -247,6 +247,7 @@ Contributions are welcome! Here's how you can help:
 **Keansburg Pack**  
 📍 Mutala Muhammed Highway, Aptech, Calabar, Nigeria  
 📞 +234 703-183-395-8 
+
 📧 viquetourbeatz@gmail.com  
 
 **Designed & Developed by**  
