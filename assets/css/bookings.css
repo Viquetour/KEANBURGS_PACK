@@ -1,0 +1,359 @@
+/* Customize the modal's background color and border radius */
+.modal {
+  border-radius: 10px;
+  transition: all 0.5s;
+  
+}
+.modal-dialog{
+  /* margin-left: 160px; */
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  line-height: 10px;
+  
+}
+
+/* Customize the modal's header */
+.modal-header {
+  /* background-color: rgba(255, 250, 244, 0.178);; */
+  border-bottom: none;
+  width: 100%;
+  height: 40px;
+  z-index: 2;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  border-bottom: 1px white solid;
+  
+}
+
+
+/* Add an overlay color to the modal content */
+.modal-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.541); /* Adjust the color and opacity as needed */
+z-index: -2;
+margin: 0;
+}
+
+/* Style the modal content */
+.modal-content {
+  position: relative;
+  background-image: url(/assets/img/chefs/chefs-2.jpg);
+  background-size: cover;
+  color: #000000; /* Set the text color on top of the overlay */
+  padding: 20px; /* Adjust the padding as needed */
+  border-radius: 10px;
+  z-index: -2;
+  /* width: 700px; */
+  height:fit-content;
+  text-align: center;
+  align-items: center;
+  
+}
+
+/* quotation marks */
+
+.booking-note .quote::before {
+  content: "“"; /* Opening double quotation mark */
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #ffffff; /* Change the color as desired */
+  margin-right: 5px; /* Add space to the right of the opening quotation mark */
+  /* margin-top: 7px; */
+}
+
+.booking-note .quote::after {
+  content: "”"; /* Closing double quotation mark */
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #ffffff; /* Change the color as desired */
+  margin-left: 5px; /* Add space to the left of the closing quotation mark */
+  /* margin-top: 7px; */
+}
+
+/* Customize other elements inside the modal content as needed */
+
+
+
+/* Customize the modal's title text */
+.modal-title {
+  text-align: center !important;
+  font-weight: bold;
+  font: 15px;
+  
+}
+
+.modal-title span{
+  color: #f89909;
+}
+/* Customize the modal's close button */
+.close {
+  font-size: 30px;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+/* Customize the modal's content area */
+.modal-body {
+  line-height: 20px;
+  width: 100%;
+}
+
+.modal-body .booking-note{
+  color:#fff;
+
+}
+
+.modal-body .table{
+    text-align: left;
+    background-color: #28a745;
+    border: none;
+   
+}
+
+/* Customize the modal's footer */
+.modal-footer {
+  border-top: 1px white solid;
+  width: 100%;
+  
+  
+}
+
+/* Customize the buttons in the modal footer */
+.modal-footer .btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* Customize the primary button in the modal footer */
+.modal-footer .btn-primary {
+  background-color:#ffb03b;
+  color: #fff;
+  border: none;
+}
+
+/* Customize the primary button's hover state */
+.modal-footer .btn-primary:hover {
+  background-color:#f89909;
+}
+
+
+/* Styles for the booking form container */
+.form-wrap {
+  -moz-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Styles for the heading inside the form */
+.form-wrap h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+ 
+.form-area .form-wrap h2 span{
+  color:#f89909;
+}
+/* Styles for the form area */
+/* .form-area { */
+  /* Background and padding for the form area */
+/* } */
+
+/* Styles for the booking image background */
+.booking-img {
+  background-size: cover;
+}
+
+/* Styles for the booking area container */
+.booking-area {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Additional styles for the booking area container */
+.booking-area {
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 100px;
+  position: relative;
+  background: url(../img/booking-overlay.png);
+  background-size: cover;
+  padding: 50px;
+  border-radius: 20px;
+  left: -20%;
+  -moz-box-shadow: 0 1px 10px 5px rgba(228, 221, 221, 0.363);
+  -webkit-box-shadow: 0 1px 10px 5px rgba(228, 221, 221, 0.363);
+  box-shadow: 0 1px 10px 5px rgba(216, 208, 208, 0.363);
+}
+
+/* Styles for the heading within the booking area */
+.booking-area h4 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Styles for form groups within the booking area */
+.booking-area .form-group {
+  margin-bottom: 15px;
+}
+
+/* Styles for form controls and selects */
+.booking-area input.form-control,
+.form-select {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #f5d29df3;
+  padding-left: 20px;
+}
+
+/* Styles for the textarea form control */
+.booking-area textarea.form-control {
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid #f5d29df3;
+  height: 100px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.booking-area .form-group span{
+  color: red;
+  font-size: small;
+}
+
+.booking-area .price p{
+  font-size: 17px;
+  font-weight: bold;
+
+
+}
+
+.booking-area .price p span{
+  border: 1px solid #f5d29df3;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.home-contact-area {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for error messages */
+.booking-area .text-danger {
+  color: #dc3545 !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Styles for success messages */
+.booking-area .text-success {
+  color: #28a745 !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Styles for informational text */
+.booking-area .info span {
+  color: #ffb03b;
+}
+
+/* Styles for form control focus */
+.booking-area .form-control,
+.form-select:focus {
+  -moz-box-shadow: 0 0 0 0.04rem #f5d29df3;
+  -webkit-box-shadow: 0 0 0 0.04rem #f5d29df3;
+  box-shadow: 0 0 0 0.04rem #f5d29df3;
+}
+
+/* Styles for the select options */
+
+.form-select option {
+  background-color: #fff;
+  color: #000000;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #f5d29df3;
+  transition: background-color 0.3s; /* Add a transition for smooth color change */
+}
+
+/* Styles for the selected option */
+.form-select option:checked {
+  background-color: #ffb03b !important;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styles for discount message */
+.booking-area .discount_msg {
+  background-color: white;
+  border-radius: 5px;
+  line-height: 7px;
+}
+
+/* Styles for select option hover */
+.form-select option:hover {
+  background-color: #ffb03b !important;
+  color: #fff;
+}
+
+/* Styles for the submit button */
+.booking-area .btn {
+  background: #ffb03b;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+/* Styles for the submit button on hover */
+.booking-area .btn:hover {
+  background: #f89909;
+}
+
+/* Styles for the disabled submit button */
+.booking-area .btn:disabled {
+  background-color: #eebe76;
+  color: #ffffff;
+  cursor: not-allowed;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+

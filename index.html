@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Keansburg Pack </title>
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+
+
+
+    <!--  CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bookings.css">
+
+
+
+
+
+</head>
+
+
+<body>
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="headerController">
+        <!--  Top Bar -->
+        <section id="topbar" class="d-flex align-items-center fixed-top topbar"
+            ng-class="{ 'topbar-scrolled': topbarScrolled }">
+            <div
+                class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+                <i class="bi bi-phone d-flex align-items-center"><span>+234 11100 0090</span></i>
+                <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00
+                        PM</span></i>
+            </div>
+        </section>
+
+
+
+        <!-- Header  -->
+        <header id="header" class="fixed-top d-flex align-items-center header"
+            ng-class="{ 'header-scrolled': headerScrolled }">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+                <div class="logo me-auto">
+                    <h1><a class="navbar-brand" href="#!home">Keansburg Park</a></h1>
+                    <!-- <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid" width="100px"></a> -->
+                </div>
+
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/home') }" href="#!home">Home</a></li>
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/tickets') }"
+                                href="#!tickets">Tickets</a></li>
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/restaurant') }"
+                                href="#!restaurant">Restaurant</a></li>
+
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/gallery') } "
+                                href="#!gallery">Gallery</a></li>
+                        <li class="dropdown"><a href="#"><span>Attractions</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Swimming Pool And Slides</a></li>
+                                <li class="dropdown"><a ng-href="#"><span>Gaming center</span> <i
+                                            class="bi bi-chevron-right"></i></a>
+                                    <ul>
+                                        <li><a ng-href="#">Indoor Games</a></li>
+                                        <li><a ng-href="#">Voleyball</a></li>
+                                        <li><a ng-href="#">Basketball</a></li>
+                                        <li><a ng-href="#">Football</a></li>
+                                        <li><a ng-href="#">Play Station Games</a></li>
+                                    </ul>
+                                </li>
+                                <li><a ng-href="#">Swings</a></li>
+                                <li><a ng-href="#">Museum</a></li>
+                                <li><a ng-href="#">Our Art Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/contact') }" href="#!contact">Contact
+                                Us</a></li>
+                        <li><a class="nav-link" ng-class="{ 'active': isActive('/about') }" href="#!about">About Us</a>
+                        </li>
+                        <li><a class="nav-link" href="javascript:void(0);" ng-click="toggleDisclaimer()">Disclaimer</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- navbar -->
+
+                <a href="#!tickets" class="book-a-ticket-btn ">Book a Ticket</a>
+
+            </div>
+
+            <div class="disclaimer-container container-xl align-items-center justify-content-center justify-content-lg-start"
+                ng-show="showDisclaimer" ng-class="{ 'disclaimer-scrolled': disclaimerScrolled }">
+                <h2>Keansburg <span>Disclaimer</span></h2>
+
+                <p><span>Disclaimer of Liability:</span>
+                    Keansburg Park and its management team make every effort to ensure the safety and enjoyment of all
+                    visitors. However, visitors are reminded that the use of the park's facilities and participation in
+                    activities within the park are done at their own risk.
+
+                    <br><br><span>Assumption of Risk:</span>
+                    By entering and using Keansburg Park, visitors acknowledge and accept that there are inherent risks
+                    associated with outdoor recreational activities. These risks may include, but are not limited to,
+                    tripping, falling, encountering wildlife, or other unforeseen circumstances.
+
+                    <br><br><span>Supervision of Children:</span>
+                    Parents and guardians are responsible for the supervision and safety of their children while within
+                    Keansburg Park. Children should not be left unattended.
+
+                    <br><br><span>Rules and Regulations:</span>
+                    Visitors are expected to adhere to all posted rules and regulations within Keansburg Park. Failure
+                    to do so may result in the revocation of park privileges.
+
+                    <br><br><span>Environmental Stewardship:</span>
+                    Visitors are encouraged to help protect the natural environment of Keansburg Park by disposing of
+                    litter in designated bins, refraining from damaging plant life, and respecting wildlife.
+
+                    <br><br><span>Personal Belongings:</span>
+                    Keansburg Park is not responsible for lost or stolen personal belongings. Visitors are encouraged to
+                    secure their belongings and valuables.
+
+                    <br><br><span>Medical Emergencies:</span>
+                    In the event of a medical emergency within the park, visitors should call emergency services
+                    immediately. Keansburg Park does not provide medical assistance.
+
+                    <br><br><span>Changes and Updates:</span>
+                    Keansburg Park reserves the right to modify or update park rules, hours of operation, and facilities
+                    without prior notice.
+                    <br><br><span>Note:</span>
+                    By entering Keansburg Park, visitors agree to abide by these terms and conditions and accept the
+                    inherent risks associated with outdoor activities. Visitors who do not agree with these terms are
+                    advised not to enter the park.
+
+                <h5> <q> Thank you for your cooperation and enjoy your visit to Keansburg Park.</q></h5>
+                </p>
+                <div class="close-btn" ng-click="hideDisclaimer()" ng-class="{ 'close-scrolled': closeScrolled }"><i
+                        class='bx bx-x'></i></div>
+            </div>
+    </div>
+    <div>
+
+
+    </div>
+
+    </header><!-- End Header -->
+
+
+
+    </div>
+    </div>
+
+    <!-- div for the view -->
+
+    <div ng-view></div>
+
+
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-content ">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li>
+                                <a href="#!home"><i class='bx bx-chevron-right'></i></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="#!restaurant"><i class='bx bx-chevron-right'></i>Restaurant</a>
+                            </li>
+                            <li>
+                                <a href="#!bookings"><i class='bx bx-chevron-right'></i>Book Ticket</a>
+                            </li>
+                            <li>
+                                <a href="#!about"><i class='bx bx-chevron-right'></i> Why Us?</a>
+                            </li>
+                            <li>
+                                <a href="#!contact"><i class='bx bx-chevron-right'></i> Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="center-content">
+                        <h3>Keansburg Pack</h3>
+                        <p> To be the best in Everything we do</p>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-content fml-15 fml-20">
+                        <h2>Find Us</h2>
+                        <ul>
+                            <li>
+                                <a href="#"><i class='bx bx-chevron-right'></i> +234 817 438 0445</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class='bx bx-chevron-right'></i> +234 817 438 0445</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class='bx bx-chevron-right'></i>keansburg@gmail.com</a>
+                            </li>
+                            <li>
+
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-chevron-right'></i>Mutala Muhammed Highway
+                                    Aptech, Calabar.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Keansburg Pack</span></strong>. All Rights Reserved
+                        Designed by <a href="#">Gottlieb groups of companies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" back-to-top><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Ticker container -->
+    <div id="ticker" ng-controller="tickerController">
+        <span id="ticker-content">{{tickerContent}}</span>
+    </div>
+
+
+    <!-- libraries JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+    <script src="assets/js/routes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+
+
+
+
+
+
+    <!--  Main JS File -->
+    <script src="assets/js/routes.js"></script>
+    <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
