@@ -10,17 +10,28 @@ A fully responsive single-page application (SPA) for **Keansburg Pack** — an a
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Pages & Sections](#-pages--sections)
-- [Attractions](#-attractions)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [API Integration](#-api-integration)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+- [🎢 Keansburg Pack — Amusement Park \& Resort Website](#-keansburg-pack--amusement-park--resort-website)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [🛠 Tech Stack](#-tech-stack)
+  - [📄 Pages \& Sections](#-pages--sections)
+    - [🏠 Home (`/#/home`)](#-home-home)
+    - [🎫 Tickets (`/#/tickets`)](#-tickets-tickets)
+    - [🍽️ Restaurant (`/#/restaurant`)](#️-restaurant-restaurant)
+    - [🖼️ Gallery (`/#/gallery`)](#️-gallery-gallery)
+    - [📞 Contact (`/#/contact`)](#-contact-contact)
+    - [ℹ️ About (`/#/about`)](#ℹ️-about-about)
+    - [📅 Bookings (`/#/bookings`)](#-bookings-bookings)
+  - [🎪 Attractions](#-attractions)
+  - [💻 Installation](#-installation)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [🚀 Usage](#-usage)
+  - [📁 Project Structure](#-project-structure)
+  - [🔌 API Integration](#-api-integration)
+  - [🤝 Contributing](#-contributing)
+  - [📜 License](#-license)
+  - [📞 Contact](#-contact)
 
 ---
 
@@ -242,11 +253,11 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Keansburg Pack**  
 📍 Mutala Muhammed Highway, Aptech, Calabar, Nigeria  
-📞 +234 817 438 0445  
-📧 keansburg@gmail.com  
+📞 +234 703-183-395-8 
+📧 viquetourbeatz@gmail.com  
 
 **Designed & Developed by**  
-[Gottlieb Groups of Companies](https://github.com/Viquetour/KEANBURGS_PACK)
+[Viquetour](https://github.com/Viquetour/KEANBURGS_PACK)
 
 ---
 
